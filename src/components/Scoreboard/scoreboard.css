@@ -1,0 +1,155 @@
+.scoreBoard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    min-width: 900px;
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.score {
+    text-align: center;
+}
+
+.digits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.reset {
+    padding-top: 20px;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+}
+  
+.scoreboard-button {
+    border: 2px solid #9AABD8;
+    background-color: transparent;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #9AABD8;
+    font-size: 20px;
+}
+  
+.scoreboard-button:hover {
+    border-color: white;
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+
+.digits {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+.digit {
+    width:120px;
+    height:200px;
+    margin:0 5px;
+    position:relative;
+    display:inline-block;
+}
+.digit .segment {
+    background:#c00;
+    border-radius:5px;
+    position:absolute;
+    opacity:1;
+    transition:opacity 0.2s;
+    -webkit-transition:opacity 0.2s;
+    -ms-transition:opacity 0.2s;
+    -moz-transition:opacity 0.2s;
+    -o-transition:opacity 0.2s;
+}
+.digit .segment.off {
+    opacity:0.15;
+    box-shadow:0 0 50px rgba(255,0,0,0.7);
+    transition:opacity 0s;
+    -webkit-transition:opacity 0s;
+    -ms-transition:opacity 0s;
+    -moz-transition:opacity 0s;
+    -o-transition:opacity 0s;
+}
+
+.digit .segment.top {
+    top:10px;
+    left:20px;
+    right:20px;
+    height:10px;
+} 
+.digit .segment.top-right {
+    top:20px;
+    right:10px;
+    width:10px;
+    height:calc(50% - 25px);
+} 
+.digit .segment.bottom-right {
+    bottom:20px;
+    right:10px;
+    width:10px;
+    height:75px;
+    height:calc(50% - 25px);
+}
+.digit .segment.bottom {
+    bottom:10px;
+    right:20px;
+    height:10px;
+    left:20px;
+} 
+.digit .segment.bottom-left {
+    bottom:20px;
+    left:10px;
+    width:10px;
+    height:75px;
+    height:calc(50% - 25px);
+}
+.digit .segment.top-left {
+    top:20px;
+    left:10px;
+    width:10px;
+    height:75px;
+    height:calc(50% - 25px);
+}
+.digit .segment.middle{
+    bottom:95px;
+    bottom:calc(50% - 5px);
+    right:20px;
+    left:20px;
+    height:10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .scores {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .score-button-group {
+      padding: 0px;
+    }
+
+    .reset {
+      margin-top: 10px;
+    }
+  }

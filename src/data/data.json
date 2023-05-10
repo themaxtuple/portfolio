@@ -1,0 +1,29 @@
+{
+    "projects": [
+      {
+        "id": "tenzies",
+        "name": "Tenzies",
+        "description": "Get all matching dice in the least amount of rolls. Click a die to hold it. The orginal project's requirements were to create the game using a singular number (1-6) to represent the dice faces. I augmented it to use some Javascript to represent the faces as real dice with black pips.",
+        "technologies": ["React"],
+        "image": "path/to/image1.jpg",
+        "url": "https://www.example.com/project1"
+      },
+      {
+        "id": "scoreboard",
+        "name": "LED Scoreboard",
+        "description": "A responsive scoreboard. I built this twice, originally using only vanilla Javascript, then a second time using React. The original project's requirements were to create the scoreboard only using numbers. I augmented it to use an array of segments mimicking real LEDs. While I could have tried to figure out the CSS myself, I used ChatGPT to accelerate the process and adjusted the code it produced to integrate with my own.",
+        "technologies": ["React"],
+        "image": "path/to/image2.jpg",
+        "url": "https://www.example.com/project2"
+      },
+      {
+        "id": "notes",
+        "name": "Notes",
+        "description": "Etiam ut ipsum in mi tincidunt scelerisque. Praesent vitae sapien eget metus lacinia dictum sit amet in neque.",
+        "technologies": ["Vue.js", "Laravel", "PostgreSQL"],
+        "image": "path/to/image3.jpg",
+        "url": "https://www.example.com/project3"
+      }
+    ]
+  }
+  
