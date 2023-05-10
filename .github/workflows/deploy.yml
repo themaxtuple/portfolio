@@ -1,4 +1,4 @@
-name: Build on Github & Deploy on Digital Ocean
+name: Build & Deploy
 on:
   push:
     branches: [main]
