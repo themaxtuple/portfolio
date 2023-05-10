@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build & Deploy
 on:
   push:
     branches: [main]
@@ -15,6 +15,7 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
           
           script: |
-            cd /home/
+            mkdir test
+            cd test
             git clone git@github.com:themaxtuple/portfolio.git
             echo 'Deployment successful to Digital Ocean'
