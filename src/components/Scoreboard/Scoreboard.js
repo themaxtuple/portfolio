@@ -12,7 +12,7 @@ function Scoreboard() {
                 <Score team="away" />
             </div>
             <div className='reset'>
-                <Button type="RESET" text="RESET" />
+                <Button type="RESET" text="RESET!" />
             </div>
         </div>
     )

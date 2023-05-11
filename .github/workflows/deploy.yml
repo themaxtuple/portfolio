@@ -15,7 +15,8 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
           
           script: |
-            mkdir test
-            cd test
+            cd /home
             git clone git@github.com:themaxtuple/portfolio.git
+            npm run build
+            sudo cp -r /home/portfolio/build/* /var/www/html/
             echo 'Deployment successful to Digital Ocean'
