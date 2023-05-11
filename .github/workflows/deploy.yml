@@ -17,6 +17,7 @@ jobs:
           script: |
             cd /home
             git clone git@github.com:themaxtuple/portfolio.git
+            cd /home/portfolio
             npm run build
             sudo cp -r /home/portfolio/build/* /var/www/html/
             echo 'Deployment successful to Digital Ocean'
